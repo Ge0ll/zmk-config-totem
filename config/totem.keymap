@@ -10,12 +10,12 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/unicode-chars/german.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "zmk-helpers/helper.h"
-#include "zmk-helpers/unicode-chars/german.dtsi"
 
 #define BASE 0
 #define NAV  1
@@ -41,20 +41,37 @@
             bindings = <&kp ESC>;
         };
 
-        combo_tvp {
+        combo_to_base {
             timeout-ms = <100>;
-            key-positions = <11 12 13>;
+            key-positions = <20 31>;
             bindings = <&tog 0>;
+            layers = <4>;
+        };
+
+        l_win {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <10 11>;
+        };
+
+        r_win {
+            bindings = <&kp RIGHT_WIN>;
+            key-positions = <18 19>;
+        };
+
+        l_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <11 12 13>;
+            layers = <0 4>;
         };
     };
 
     macros {
-        to_en: to_ru {
+        to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap>, <&kp LC(NUMBER_1) &sl 0>;
 
-            label = "TO_RU";
+            label = "TO_EN";
         };
 
         new_macro: new_macro {
@@ -87,10 +104,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp B       &kp L       &kp D        &kp W        &kp Z      &kp J    &kp F        &kp O        &kp U       &kp J
-                  &mt LGUI N  &mt LALT R  &mt LCTRL T  &mt LSHFT S  &kp G      &kp Y    &mt RSHFT H  &mt RCTRL A  &mt RALT E  &mt RGUI I
-&kp LC(NUMBER_1)  &kp Q       &kp X       &kp M        &kp C        &kp V      &kp K    &kp P        &kp PERIOD   &kp MINUS   &kp FSLH    &kp BSLH
-                                          &kp DEL      &lt 1 SPACE  &kp TAB    &kp RET  &lt 2 SPACE  &kp BSPC
+                  &kp B  &kp L  &kp D    &kp W        &kp Z      &kp J    &kp F        &kp O        &kp U       &kp J
+                  &kp N  &kp R  &kp T    &kp S        &kp G      &kp Y    &mt RSHFT H  &mt RCTRL A  &mt RALT E  &mt RGUI I
+&kp LC(NUMBER_1)  &kp Q  &kp X  &kp M    &kp C        &kp V      &kp K    &kp P        &kp PERIOD   &kp MINUS   &kp FSLH    &kp BSLH
+                                &kp DEL  &lt 1 SPACE  &kp TAB    &kp RET  &lt 2 SPACE  &kp BSPC
             >;
         };
 
@@ -191,6 +208,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        test {
+            if-layers = <0>;
+            then-layer = <1>;
         };
     };
 };
