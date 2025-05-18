@@ -47,19 +47,19 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
+        to_en: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+            bindings = <&macro_tap>, <&kp LC(NUMBER_1) &sl 0>;
+
+            label = "TO_RU";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "NEW_MACRO";
         };
     };
 
@@ -179,6 +179,15 @@
            &kp G  &kp A  &kp S      &kp D      &kp F       &kp H    &kp J   &kp K      &kp L    &kp SEMI
 &kp LCTRL  &kp B  &kp Z  &kp X      &kp C      &kp V       &kp N    &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
                          &kp LSHFT  &kp SPACE  &kp LALT    &kp RET  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
