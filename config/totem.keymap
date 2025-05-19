@@ -104,10 +104,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                  &kp B  &kp L  &kp D    &kp W        &kp Z      &kp J    &kp F        &kp O        &kp U       &kp J
-                  &kp N  &kp R  &kp T    &kp S        &kp G      &kp Y    &mt RSHFT H  &mt RCTRL A  &mt RALT E  &mt RGUI I
-&kp LC(NUMBER_1)  &kp Q  &kp X  &kp M    &kp C        &kp V      &kp K    &kp P        &kp PERIOD   &kp MINUS   &kp FSLH    &kp BSLH
-                                &kp DEL  &lt 1 SPACE  &kp TAB    &kp RET  &lt 2 SPACE  &kp BSPC
+                  &kp B  &kp L           &kp D               &kp W             &kp Z      &kp J    &kp F        &kp O        &kp U       &kp J
+                  &kp N  &mt LEFT_ALT R  &mt LEFT_CONTROL T  &mt LEFT_SHIFT S  &kp G      &kp Y    &mt RSHFT H  &mt RCTRL A  &mt RALT E  &mt RGUI I
+&kp LC(NUMBER_1)  &kp Q  &kp X           &kp M               &kp C             &kp V      &kp K    &kp P        &kp PERIOD   &kp MINUS   &kp FSLH    &kp BSLH
+                                         &kp DEL             &lt 1 SPACE       &kp TAB    &kp RET  &lt 2 SPACE  &kp BSPC
             >;
         };
 
