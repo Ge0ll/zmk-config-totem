@@ -172,6 +172,46 @@
             require-prior-idle-ms = <35>;
             hold-trigger-on-release;
         };
+
+        mt_en: mt_en {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_EN";
+            bindings = <&kp>, <&to_en>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <20>;
+        };
+
+        mt_ru: mt_ru {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_RU";
+            bindings = <&kp>, <&to_ru>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <20>;
+        };
+    };
+
+    macros {
+        to_ru: to_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(LS(NUMBER_1)) &sl 0>;
+
+            label = "TO_RU";
+        };
+
+        to_en: to_en {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LC(LS(NUMBER_2)) &sl 0>;
+
+            label = "TO_EN";
+        };
     };
 
     keymap {
@@ -196,10 +236,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                             &kp B  &kp L                  &kp D            &kp W                    &kp Z        &kp MINUS  &kp F                          &kp O                  &kp U                   &kp J
-                             &kp N  &mt_shift_left LALT R  &mt_left LGUI T  &mt_shift_left LSHIFT S  &kp G        &kp Y      &mt_shift_right RIGHT_SHIFT H  &mt_right RIGHT_WIN A  &mt_shift_right RALT E  &kp I
-&mt_all LEFT_CONTROL ESCAPE  &kp Q  &kp X                  &kp M            &kp C                    &kp V        &kp K      &kp P                          &kp COMMA              &kp DOT                 &kp FSLH  &mt_all RCTRL SQT
-                                                           &kp BACKSPACE    &lt NAV TILDE            &kp SPACE    &kp TAB    &lt SYM GRAVE                  &kp DELETE
+                &kp B  &kp L                  &kp D            &kp W                    &kp Z        &kp MINUS  &kp F                          &kp O                  &kp U                   &kp J
+                &kp N  &mt_shift_left LALT R  &mt_left LGUI T  &mt_shift_left LSHIFT S  &kp G        &kp Y      &mt_shift_right RIGHT_SHIFT H  &mt_right RIGHT_WIN A  &mt_shift_right RALT E  &kp I
+&mt_ru LCTRL 0  &kp Q  &kp X                  &kp M            &kp C                    &kp V        &kp K      &kp P                          &kp COMMA              &kp DOT                 &kp FSLH  &mt_all RCTRL SQT
+                                              &kp BACKSPACE    &lt NAV TILDE            &kp SPACE    &kp TAB    &lt SYM GRAVE                  &kp DELETE
             >;
         };
 
