@@ -237,7 +237,7 @@
 
             bindings = <
                 &kp B  &kp L                  &kp D     &kp W                    &kp Z      &kp PERIOD  &kp F                          &kp O          &kp U      &kp J
-                &kp N  &mt_shift_left LALT R  &kp T     &mt_shift_left LSHIFT S  &kp G      &kp Y       &mt_shift_right RIGHT_SHIFT H  &kp A          &kp I      &kp I
+                &kp N  &mt_shift_left LALT R  &kp T     &mt_shift_left LSHIFT S  &kp G      &kp Y       &mt_shift_right RIGHT_SHIFT H  &kp A          &kp E      &kp I
 &mt_ru LCTRL 0  &kp Q  &kp X                  &kp M     &kp C                    &kp V      &kp K       &kp P                          &kp COMMA      &kp MINUS  &kp FSLH  &mt_all RCTRL SQT
                                               &kp RGUI  &lt 1 TILDE              &kp TAB    &kp DELETE  &lt 2 SPACE                    &kp BACKSPACE
             >;
