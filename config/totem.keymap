@@ -51,6 +51,7 @@
             key-positions = <0 20>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
+            layers = <4 0>;
         };
 
         enter_combo {
@@ -72,6 +73,7 @@
             key-positions = <8 9>;
             timeout-ms = <20>;
             require-prior-idle-ms = <100>;
+            layers = <4>;
         };
 
         russian_letter_x {
@@ -79,6 +81,7 @@
             key-positions = <8 7>;
             require-prior-idle-ms = <100>;
             timeout-ms = <20>;
+            layers = <4>;
         };
     };
 
