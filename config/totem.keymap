@@ -211,7 +211,7 @@
         to_en: to_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LS(LG(U)) &sl 0>;
+            bindings = <&macro_tap>, <&kp LS(LG(U)) &to 0>;
 
             label = "TO_EN";
         };
@@ -268,7 +268,7 @@
         &kp GRAVE  &kp UNDER       &kp UP          &kp PLUS         &kp LBRC    &kp RBRC    &kp N7        &kp N8        &kp N9        &kp EQUAL
         &to_ru     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LBKT    &kp RBKT    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
 &trans  &trans     &kp PG_UP       &trans          &kp PG_DN        &kp LPAR    &kp RPAR    &kp NUMBER_1  &kp N2        &kp N3        &kp KP_MULTIPLY  &trans
-                                   &trans          &trans           &trans      &kp PERIOD  &kp N0        &kp KP_COMMA
+                                   &trans          &trans           &trans      &kp PERIOD  &trans        &kp KP_COMMA
             >;
         };
 
