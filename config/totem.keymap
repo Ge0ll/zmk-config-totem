@@ -358,8 +358,8 @@
 
         squad2 {
             bindings = <
-        &kp N1  &trans  &trans  &trans          &kp CAPS    &trans  &trans  &trans  &trans  &trans
-        &kp N4  &kp N5  &kp N6  &kp LEFT_SHIFT  &kp M       &trans  &trans  &trans  &trans  &trans
+        &kp N1  &trans  &trans  &trans          &kp R       &trans  &trans  &trans  &trans  &trans
+        &kp N4  &kp N5  &kp N6  &kp LEFT_SHIFT  &kp CAPS    &trans  &trans  &trans  &trans  &trans
 &trans  &kp F1  &kp F2  &kp F3  &kp F4          &kp F5      &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans          &trans      &trans  &trans  &trans
             >;
