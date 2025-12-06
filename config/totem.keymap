@@ -350,7 +350,7 @@
         squad {
             bindings = <
            &kp T           &kp Q  &kp W     &kp E       &kp M    &kp PG_UP  &kp CAPS  &trans  &trans  &trans
-           &kp LEFT_SHIFT  &kp Q  &kp S     &kp D       &kp F    &kp PG_DN  &kp TAB   &trans  &trans  &trans
+           &kp LEFT_SHIFT  &kp A  &kp S     &kp D       &kp F    &kp PG_DN  &kp TAB   &trans  &trans  &trans
 &kp LCTRL  &kp B           &kp Z  &kp X     &kp LSHIFT  &kp V    &kp F1     &kp F2    &kp F3  &kp F4  &kp F5  &kp F6
                                   &kp LALT  &kp SPACE   &mo 7    &mo 2      &to 0     &trans
             >;
