@@ -358,10 +358,10 @@
 
         squad2 {
             bindings = <
-        &kp N1  &kp N2  &kp N3  &kp PG_UP  &kp CAPS    &trans  &trans  &trans  &trans  &trans
-        &kp N4  &kp N5  &kp N6  &kp PG_DN  &kp M       &trans  &trans  &trans  &trans  &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4     &kp F5      &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans     &trans      &trans  &trans  &trans
+        &kp N1  &kp N2  &kp N3  &kp PG_UP       &kp CAPS    &trans  &trans  &trans  &trans  &trans
+        &kp N4  &kp N5  &kp N6  &kp LEFT_SHIFT  &kp M       &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4          &kp F5      &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans          &trans      &trans  &trans  &trans
             >;
         };
     };
