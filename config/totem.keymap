@@ -193,7 +193,7 @@
         to_ru: to_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LS(LG(R)) &to 2 &tog 6>;
+            bindings = <&macro_tap>, <&kp LS(LG(R)) &to 2>;
 
             label = "TO_RU";
         };
@@ -236,6 +236,7 @@
 
         ru {
             label = "RU";
+            
             bindings = <
         &kp Q  &kp W                      &kp E   &kp R                        &kp T    &kp Y  &kp U                          &kp I      &kp O    &kp P
         &kp A  &mt_shift_left LEFT_ALT S  &kp D   &mt_shift_left LEFT_SHIFT F  &kp G    &kp H  &mt_shift_right RIGHT_SHIFT J  &kp K      &kp L    &kp SEMI
@@ -246,6 +247,7 @@
 
         nav_ru {
             label = "NAVIRU";
+            
             bindings = <
         &kp GRAVE  &kp UNDER       &kp UP          &kp PLUS         &kp LBRC    &kp RBRC    &kp N7        &kp N8        &kp N9        &kp EQUAL
         &to_en     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LBKT    &kp RBKT    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
@@ -255,20 +257,8 @@
         };
 
         sim_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "SYM";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃     !     ┃     @     ┃     #     ┃     $     ┃     %     ┃   ┃     ˆ     ┃     &     ┃     Ü     ┃     '     ┃     "     ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃     Ä     ┃           ┃    SZ     ┃           ┃           ┃   ┃   MUTE    ┃   YEN     ┃   EURO    ┃  POUND    ┃     Ö     ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃           ┃  EMAIL1   ┃  EMAIL2   ┃           ┃           ┃           ┃   ┃   VOL-    ┃   VOL+    ┃   LAST    ┃   NEXT    ┃     \     ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃    GIF    ┃    ADJ    ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
         &to 7            &kp CAPSLOCK  &trans    &trans      &trans         &kp LG(N1)  &kp LG(N2)     &kp LG(N3)       &kp LG(N4)        &kp LG(N5)
