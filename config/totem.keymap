@@ -9,7 +9,7 @@
 #define NAVIRU 3
 #define SQUAD  4
 #define SYM    5
-#define ADJ    6;
+#define ADJ    6
 #define SQUAD2 7
 
 &mt {
@@ -261,7 +261,7 @@
            &kp T           &kp Q  &kp W     &kp E       &kp M    &kp PG_UP  &kp CAPS  &trans  &trans  &trans
            &kp LEFT_SHIFT  &kp A  &kp S     &kp D       &kp F    &kp PG_DN  &kp TAB   &trans  &trans  &trans
 &kp LCTRL  &kp B           &kp Z  &kp X     &kp LSHIFT  &kp V    &kp F1     &kp F2    &kp F3  &kp F4  &kp F5  &kp F6
-                                  &kp LALT  &kp SPACE   &mo 7    &mo 6      &to_en     &trans
+                                  &kp LALT  &kp SPACE   &mo 7    &mo 6      &to_en    &trans
             >;
         };
 
