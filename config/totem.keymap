@@ -218,7 +218,7 @@
                   &kp B  &kp L                  &kp D    &kp W                    &kp Z    &kp PERIOD  &kp F                          &kp O          &kp U      &kp J
                   &kp N  &mt_shift_left LALT R  &kp T    &mt_shift_left LSHIFT S  &kp G    &kp Y       &mt_shift_right RIGHT_SHIFT H  &kp A          &kp E      &kp I
 &kp LEFT_CONTROL  &kp Q  &kp X                  &kp M    &kp C                    &kp V    &kp K       &kp P                          &kp COMMA      &kp MINUS  &kp FSLH  &mt_all RCTRL SQT
-                                                &kp TAB  &kp LGUI                 &mo 1    &mo 4       &kp SPACE                      &kp BACKSPACE
+                                                &kp TAB  &kp LGUI                 &mo 1    &mo 5       &kp SPACE                      &kp BACKSPACE
             >;
         };
 
