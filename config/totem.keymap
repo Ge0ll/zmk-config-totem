@@ -9,7 +9,7 @@
 #define NAVIRU 3
 #define SQUAD  4
 #define SYM    5
-#define ADJ    6
+#define ADJ    6;
 #define SQUAD2 7
 
 &mt {
